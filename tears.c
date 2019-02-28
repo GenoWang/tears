@@ -17,6 +17,7 @@ int main(){
 
     alarm(30);
 
+    int lucky_number = 0xdeadbeef;
     int i;
     long long unsigned int *index;
     int value;
@@ -29,6 +30,7 @@ int main(){
     printf("  \\__/   \\__/                                 \n");
     printf("==============================================\n");
 
+	printf("Your relative:%p\n", &lucky_number);
 
     for(i = 0; i < 3; i++){
         printf("Eye  >");
