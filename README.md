@@ -14,7 +14,7 @@ Easy.
 
 Three times of Writing 4 bytes anywhere. 
 
-Noticed that .text segment is writable.
+Noticed that .text segment is writable(RWX).
 
 Step 1: Overwrite return address to `hack()`(4 bytes);
 
