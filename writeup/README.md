@@ -62,6 +62,6 @@ docker build -t "tears" .
 ```
 Run docker:
 ```bash
-docker run -d -p "0.0.0.0:2333:9999" tears
+docker run -d --privileged -p "0.0.0.0:2333:9999" tears
 ```
 程序会在2333端口运行。
